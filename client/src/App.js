@@ -19,13 +19,33 @@ function App() {
           }}
         />
         <label>Age:</label>
-        <input type="number" />
+        <input
+          type="number"
+          onChange={(event) => {
+            setAge(event.target.value);
+          }}
+        />
         <label>Country:</label>
-        <input type="text" />
+        <input
+          type="text"
+          onChange={(event) => {
+            setCountry(event.target.value);
+          }}
+        />
         <label>Position:</label>
-        <input type="text" />
+        <input
+          type="text"
+          onChange={(event) => {
+            setPosition(event.target.value);
+          }}
+        />
         <label>Wage: (year):</label>
-        <input type="number" />
+        <input
+          type="number"
+          onChange={(event) => {
+            setWage(event.target.value);
+          }}
+        />
         <button>Add Employee</button>
       </div>
     </div>
